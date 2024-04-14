@@ -10,14 +10,14 @@ Welcome to my professional portfolio website, designed to showcase my skills and
 
 ## Purpose
 
-The primary purpose of this portfolio is to effectively present my technical projects and contributions, highlighting my expertise in web development. It aims to attract professional opportunities and serve as a resume that showcases my background and experience.
+The primary purpose of this portfolio is to effectively present my projects and contributions. It aims to attract professional opportunities and serve as a resume that showcases my background and experience.
 
 ## Functionality / Features
 
 - **Project Showcase:** Each project has its own project card with a link to the deployed site or github repository.
 - **Responsive Design:** Ensures that the website is accessible and visually appealing on any device, from desktops to mobile phones. This is in progress.
 - **Contact Form:** Allows visitors to easily reach out to me, enhancing professional connectivity.
-- **Accessibility Features:** Includes keyboard navigation and screen reader support to ensure the website is usable for people with disabilities. In progress. 
+- **Accessibility Features:** Includes keyboard navigation and screen reader support to ensure the website is usable for people with disabilities. In progress.
 
 ## Screenshots
 
