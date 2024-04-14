@@ -2,7 +2,7 @@
 
 [GitHub Repo](https://github.com/shayzimm/ca-portfolio-t1a2)
 
-[Deployed Site]()
+[Deployed Site](https://shayzimm.github.io/ca-portfolio-t1a2/)
 
 ## Description
 
