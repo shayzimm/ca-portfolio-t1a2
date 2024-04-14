@@ -69,13 +69,12 @@ body {
 /* Homepage Styles */
 
 .home {
+    width: 100%;
     height: 100vh;
-    background: url(assets/images/backgroundlogo.png) no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 70px 10% 0;
 }
 
 .home-content {
@@ -273,35 +272,51 @@ body {
     width: 100%;
 }
 
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 30px;
-    width: 50%;
+.home-img {
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    max-width: 410px;
+    max-height: 410px;
+}
+
+.home-img .glowing-circle {
+    width: 100%;
     height: 100%;
-    background: transparent;
-    transition: 3s;
-    animation: manipActiveHover .1s forwards;
-    animation-delay: 4s;
-    pointer-events: none;
+    background: #f248b6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.home-imgHover:hover {
-    background: #080B39;
-    opacity: .8;
-}
-
-.home-imgHover::after {
+.home-img .glowing-circle::after {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 120%;
-    height: 100%;
-    background: #080B39;
-    animation: showRight 1s ease forwards;
-    animation-delay: 3s;
-    z-index: 100;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    top: 5%;
+    left: 5%;
+}
+
+.glowing-circle .image {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.image img {
+    position: absolute;
+    /* top: 30px; */
+    left: 50%;
+    transform: translateX(-50%);
+    /* max-width: 350px; */
+    object-fit: cover;
 }
 
 /* About Page Styles */
@@ -312,7 +327,10 @@ body {
     min-height: 100vh;
     margin: 1.6rem;
     padding: 1.6rem;
+}
 
+#about-headshot {
+    border-radius: 50%;
 }
 
 .about-content {
@@ -329,11 +347,62 @@ body {
 
 /* Projects */
 .all-projects {
-    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 1.6rem;
+    padding: 1.6rem;
+    /* background-color: red; */
+  }
+  .projects {
+    padding: 1.6rem;
+    /* background-color: #ededed; */
+  }
+  .all-project-cards {
+    width: 100%;
+    margin-bottom: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-card {
+    margin: 1.6rem;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.4rem;
+    background: #f248b6;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #ededed;
+    border-radius: 10px;
+    padding: 30px 40px;
+  }
+  .project-img {
+    width: 150px;
+  }
+
+  .constrained-container h2 {
+    position: relative;
+     margin-left: 1.6rem;
+     font-size: 20px;
+     font-weight: 700;
+     color: #f248b6;
     
+  }
 
-}
-
+  .constrained-container p {
+    position: relative;
+    margin-left: 1.6rem;
+     font-size: 16px;
+     font-weight: 400;
+     color: #ededed;
+  }
 
 /* Contact Page Styles */
 .contact {
@@ -443,5 +512,14 @@ body {
 @keyframes manipActiveHover {
     100% {
         pointer-events: auto;
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .home-img {
+        width: 75vw;
+        height: 75vw;
     }
 }
