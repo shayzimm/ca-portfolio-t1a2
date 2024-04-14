@@ -339,10 +339,26 @@ body {
 
 #about h1 {
     margin: 1.6rem;
+    color: #f248b6;
 }
 
 #about p {
     margin: 1.6rem;
+}
+
+.tech {
+    margin: 0.6rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech i {
+    margin: 0.6rem;
+    padding: 0.6rem;
+    width: 100px;
+    border-radius: 0.4rem;
+    font-size: xx-large;
 }
 
 /* Projects */
