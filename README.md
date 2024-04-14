@@ -92,12 +92,14 @@ The target audience for this portfolio includes but is not limited to:
 - CSS
 - Markdown
 
-## Getting Started 
+## Getting Started
 
 To run this project locally, clone the repository:
 
-```
+````git clone https
+
 git clone https://github.com/shayzimm/ca-portfolio-t1a2.git
 
 cd ca-portfolio-t1a2
-```
+
+````
